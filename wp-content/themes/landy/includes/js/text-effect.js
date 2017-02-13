@@ -1,0 +1,1 @@
+!function(a){function b(){mediaCheck({media:"(max-width: 1024px)",entry:function(){},exit:function(){var b=a("#fadeOut");a(window).on("scroll",function(){var c=a(this).scrollTop();b.css({opacity:1-c/450})})}})}a(document).ready(function(){b()})}(jQuery);

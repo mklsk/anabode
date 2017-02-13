@@ -1,0 +1,15 @@
+.signup-button {
+
+	display: block;
+}
+
+
+.main-button {
+
+	width: 200px;
+}
+
+.feature-left .one-half, .feature-right .one-half {
+
+    background-position: center;
+}

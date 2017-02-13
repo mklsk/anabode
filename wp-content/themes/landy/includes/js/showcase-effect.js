@@ -1,0 +1,1 @@
+!function(a){function b(){mediaCheck({media:"(max-width: 1024px)",entry:function(){},exit:function(){var b=a("#move-showcase");a(window).on("scroll",function(){var c=a(this).scrollTop();b.css({transform:"translate3d(0,"+Math.round(c/20)+"px,0)"})})}})}a(document).ready(function(){b()})}(jQuery);

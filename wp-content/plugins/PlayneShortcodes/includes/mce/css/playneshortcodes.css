@@ -1,0 +1,9 @@
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+i.playne-shortcodes-icon {
+	background-image: url('playne-shortcodes@2x.png');
+}
+
+i.playne-shortcodes-icon {
+	background-image: url('playne-shortcodes.png');

@@ -238,6 +238,7 @@ add_action( 'wp_enqueue_scripts', 'landy_scripts' );
 function custom_scripts() {
 
         wp_enqueue_style( 'custom_css', get_template_directory_uri() . "/custom_css.css", array(), '', 'screen' );
+        wp_enqueue_script('custom_js', get_template_directory_uri() . '/custom_js.js', array( 'jquery' ), true );
 }
 
 

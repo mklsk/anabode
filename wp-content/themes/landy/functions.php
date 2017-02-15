@@ -114,6 +114,8 @@ endif; // resto_setup
 add_action( 'after_setup_theme', 'landy_setup' );
 
 
+
+
 function landy_scripts() {
 	
     global $post; 

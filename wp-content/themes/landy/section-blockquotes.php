@@ -36,39 +36,6 @@ Template Name: -- Testimonials slider
     </div>
     <?php } ?>
 
-   <!--  <div class="slider center-slick-testimonials<?php if( get_theme_mod( 'theme_customizer_general3' ) == '1') { ?>"<?php } else { ?> wow fadeInUp animated"<?php } ?><?php if( get_theme_mod( 'theme_customizer_general3' ) == '1') { ?><?php } else { ?> data-wow-duration="1.5s"<?php } ?>>
-
-        <?php $loop_blockquote = new WP_Query(array('post_type' => 'testimonial', 'posts_per_page' => -1)); $count =0; ?>
-
-                <div class="slider slider-nav">
-                    <?php if ( $loop_blockquote ) : while ( $loop_blockquote->have_posts() ) : $loop_blockquote->the_post(); ?>
-                    <div>
-                        <div class="image-blockquote">
-                            <?php the_post_thumbnail( 'large-image' ); ?>
-                        </div>
-                    </div>
-                    <?php endwhile; else: ?>
-                    <?php endif; ?>
-                </div>
-
-                <div class="slider slider-for extra-bottom">
-                    <?php if ( $loop_blockquote ) : while ( $loop_blockquote->have_posts() ) : $loop_blockquote->the_post(); ?>
-                    <div>
-                        <div class="inner-blockquote">
-                            <div class="text-blockquote">
-                                <h6><?php the_title(); ?></h6>
-                                <?php the_content(); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endwhile; else: ?>
-                    <?php endif; ?>
-                </div>
-
-    </div> -->
-
-
-
 
     <div class="testims_wrap">
 
@@ -83,18 +50,18 @@ Template Name: -- Testimonials slider
 
                 <div class="one_testim">
 
-                <div class="filter"></div>
-                    <!-- img -->
+                        <div class="filter"></div>
+                        <!-- img -->
                         <div class="image-blockquote custom">
                             <?php the_post_thumbnail( 'large-image' ); ?>
                         </div>
 
-                    <!-- text -->
+                          <!-- text -->
                   
-                            <div class="text-blockquote custom">
-                                <h6><?php the_title(); ?></h6>
-                                <?php the_content(); ?>
-                            </div>
+                        <div class="text-blockquote custom">
+                           <?php the_content(); ?>
+                            <h6><?php the_title(); ?></h6>
+                        </div>
                 </div>
 
                 <!-- count how many where posted -->
@@ -120,10 +87,10 @@ Template Name: -- Testimonials slider
 
                     <!-- text -->
                   
-                            <div class="text-blockquote custom">
-                                <h6><?php the_title(); ?></h6>
-                              <!--   <?php the_content(); ?> -->
-                            </div>
+                        <div class="text-blockquote custom">
+                            <?php the_content(); ?>
+                            <h6><?php the_title(); ?></h6>
+                        </div>
                 </div>
 
                 <!-- count how many where posted -->

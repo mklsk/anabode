@@ -39,11 +39,25 @@
 
 	height: 0;
 	transition: height 1s;
-	width: 100%;
     margin-right: 4%;
     margin-bottom: 30px;
     float: left;  
     background-color: white;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_features {
+
+	opacity: 0;
+	transition: opacity 0.5s;
+	position: absolute;
+	bottom: 20px;
 }
 
 .feature_content {
@@ -89,18 +103,13 @@
 
 
 .filter {
-	background-color: #84C99D;
+	background-color: #5C8C6D;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
 	transition: opacity 0.5s;
-}
-
-.filter:hover {
-
-	opacity: 0.5;
 }
 
 .image-blockquote.custom {
@@ -118,25 +127,35 @@
 
 	width: 90%;
 	position: absolute;
-	bottom: -100px;
 	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 	
 }
 
 .text-blockquote.custom > * {
 
 	color: white;
-
+	transition: opacity 0.5s;
 }
 
 .text-blockquote.custom > h6 {
 
 	font-size: 35px;
-	margin-bottom: 140px;
+	position: absolute;
+	bottom: 0;
 }
 
-.text-blockquote.custom > p {
+.text-blockquote.custom .quote {
 
-	display: none;
+	text-align: center;
+	opacity: 0;
+	font-size: 25px;
+	vertical-align: middle;
 }
+
+
 

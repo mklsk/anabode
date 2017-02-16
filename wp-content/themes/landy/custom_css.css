@@ -46,6 +46,11 @@
     background-color: white;
 }
 
+.feature_content {
+
+	display: none;
+}
+
 .learn {
 
 	cursor: pointer
@@ -84,12 +89,18 @@
 
 
 .filter {
-	background-color: #2d2d35;
+	background-color: #84C99D;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.filter:hover {
+
+	opacity: 0.5;
 }
 
 .image-blockquote.custom {

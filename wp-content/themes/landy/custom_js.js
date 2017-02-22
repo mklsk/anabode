@@ -16,6 +16,9 @@
 
             source = $(this).attr('class').split(' ').pop();
 
+            $('.learn').parent().parent().css('opacity', '0.5');
+            $(this).parent().parent().css('opacity', '1');
+
             if (all_closed) {
 
                 //open the placeholder
@@ -64,6 +67,8 @@
             //hide all content
             $('.feature_content').hide(300);
             $('.feature_content.' + source + "[opened='true']").removeAttr('opened');
+            $('.learn').parent().parent().css('opacity', '1');
+
             all_closed = true;
 
         });

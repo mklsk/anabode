@@ -1,8 +1,6 @@
 /*CUSTOM JS EXTENDING LANDY THEME FUNCTIONALITY*/
 
 (function($) {
-
-
     $(document).ready(function() {
 
         /*LEARN MORE SECTION*/
@@ -10,11 +8,13 @@
         var all_closed = true;
 
         //when learn more is clicked
-        $('.learn').click(function() {
+        $('.learn').click(function(e) {
 
-        	console.log(all_closed);
+            e.stopPropagation();
+            e.preventDefault();
 
             source = $(this).attr('class').split(' ').pop();
+
 
             $('.learn').parent().parent().css('opacity', '0.5');
             $(this).parent().parent().css('opacity', '1');
@@ -46,6 +46,8 @@
 
 
                 $('.feature_content[opened]').hide(300, function() {
+
+                    console.log("was already opened - " + source);
 
                     //display an appropriate content piece
                     $('.feature_content.' + source).show(300);
@@ -92,8 +94,6 @@
                 //show quote and hide title
                 $(this).children('.text-blockquote.custom').children('p').css('opacity', '1');
                 $(this).children('.text-blockquote.custom').children('h6').css('opacity', '0');
-
-
 
 
                 //out callback

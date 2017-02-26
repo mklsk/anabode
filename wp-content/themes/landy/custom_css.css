@@ -141,3 +141,40 @@
     font-size: 25px;
     vertical-align: middle;
 }
+
+form.get_started {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get_started > fieldset {
+    text-align:center;
+    width: 100%;
+}
+
+.radios > input {
+
+
+    position: relative;
+    bottom: 1.5px;
+
+}
+
+.honor {
+    -webkit-appearance: radio;
+}
+
+.radios > label {
+    width: 10%;
+    margin-right: 20px;
+}
+
+.radios > br {
+    display: none;
+}
+
+.texts > input {}

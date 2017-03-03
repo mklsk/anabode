@@ -31,7 +31,6 @@
                     $('.close_features').css('opacity', '1');
 
 
-
                     //display an appropriate content piece
                     $('.feature_content.' + source).show(300);
                     $('.feature_content.' + source).attr('opened', 'true');
@@ -109,7 +108,51 @@
             });
 
 
+        /* GET STARTED SECTION*/
+
+        //hide tenant from
+        $('.tenant_form').hide();
+        $('.landlord').addClass('switcher_on');
+
+
+        //add color switching to form changing buttons
+
+        $('.landlord').click(function() {
+
+            if(!$(this).hasClass('switcher_on')) {
+
+            $(this).addClass('switcher_on');
+            $('.tenant').removeClass('switcher_on');
+
+            $('.landlord_form').show();
+            $('.tenant_form').hide();
+
+            }
+        
+
+        });
+
+         $('.tenant').click(function() {
+
+             if(!$(this).hasClass('switcher_on')) {
+
+            $(this).addClass('switcher_on');
+            $('.landlord').removeClass('switcher_on');
+
+            $('.landlord_form').hide();
+            $('.tenant_form').show();
+
+            }
+        });
+
     });
+
+
+
+
+
+
+
 
 
 })(jQuery);

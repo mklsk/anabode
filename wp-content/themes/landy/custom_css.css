@@ -142,10 +142,7 @@
     vertical-align: middle;
 }
 
-#get-started-for-free > *{
 
-    padding-bottom: 100px!important;
-}
 
 .form_wrap {
 
@@ -258,5 +255,9 @@ form.get_started {
     display: none;
 }
 
+ #new-trusted-contructors .row {
+    padding: 100px 0;
+
+}
 
 

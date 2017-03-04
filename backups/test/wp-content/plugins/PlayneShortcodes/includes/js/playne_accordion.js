@@ -1,0 +1,1 @@
+jQuery(function($){$(document).ready(function(){$(".playne_accordion").accordion({animate:200, heightStyle: "content"});});});

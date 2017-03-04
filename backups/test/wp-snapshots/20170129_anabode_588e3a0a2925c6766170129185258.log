@@ -1,0 +1,75 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 2017-01-29 18:54:16
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.28
+WORDPRESS:	4.5.6
+PHP INFO:	7.0.15 | SAPI: cgi-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (536870912 default) 
+MEMORY STACK: 2MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20170129_anabode_588e3a0a2925c6766170129185258_database.sql 
+SQL FILE SIZE: 908.77KB (930581) 
+SQL FILE TIME: 2017-01-29 18:54:16 
+SQL RUNTIME: 0.07 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /customers/d/2/2/anabode.net/httpd.www/test 
+ARCHIVE FILE: 20170129_anabode_588e3a0a2925c6766170129185258_archive.zip 
+FILTERS: *OFF* 
+DIRS: not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	84.18MB 
+STATS:	Dirs 202 | Files 1,943 
+SQL ADDED: 20170129_anabode_588e3a0a2925c6766170129185258_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2145
+    [filename] => /customers/d/2/2/anabode.net/httpd.www/test/wp-snapshots/tmp/20170129_anabode_588e3a0a2925c6766170129185258_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 64.94MB 
+ARCHIVE RUNTIME: 6.27 sec. 
+MEMORY STACK: 4MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/customers/d/2/2/anabode.net/httpd.www/test/wp-snapshots/tmp/20170129_anabode_588e3a0a2925c6766170129185258_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 908.77KB 
+Installer File: 352.38KB 
+Archive File: 64.94MB  
+
+********************************************************************************
+RECORD ID:[3]
+TOTAL PROCESS RUNTIME: 7.80 sec.
+PEAK PHP MEMORY USED: 4MB
+DONE PROCESSING => 20170129_anabode 2017-01-29 18:54:24
+ 

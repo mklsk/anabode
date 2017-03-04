@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){t(".playne_skillbar").each(function(){t(".playne_skillbar").waypoint(function(){t(this).find(".playne_skillbar-bar").animate({width:t(this).attr("data-percent")},1500)},{triggerOnce:!0,offset:"bottom-in-view"})})});

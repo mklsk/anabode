@@ -274,10 +274,15 @@
 			 	<div class="button-area">
 			 	<?php } ?>
 
-			
+			 	<div class="first-button signup-button">
+		 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl2 = get_post_meta( $post->ID, '_playne2_buttonurlcustom2', true ); echo "$buttoncustomurl2" ?>" ?>
+
+		 				Sign up for free
+		 			</a>
+				</div>
 
 				<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom', true)) { ?>
-					<div class="first-button">
+					<div class="first-button apple-button">
 			 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl = get_post_meta( $post->ID, '_playne2_buttonurlcustom', true ); echo "$buttoncustomurl" ?>" ?>
 			 				<?php if ( get_post_meta($post->ID, '_playne2_buttonicon', true)) { ?><i class="fa <?php global $post; $buttonicon = get_post_meta( $post->ID, '_playne2_buttonicon', true ); echo "$buttonicon" ?>"></i> <?php } ?><?php global $post; $buttoncustomtext = get_post_meta( $post->ID, '_playne2_buttontextcustom', true ); echo "$buttoncustomtext" ?>
 			 			</a>
@@ -285,25 +290,13 @@
 			 	<?php } ?>
 
 				<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom2', true)) { ?>
-					<div class="second-button">
+					<div class="second-button android-button">
 			 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl2 = get_post_meta( $post->ID, '_playne2_buttonurlcustom2', true ); echo "$buttoncustomurl2" ?>" ?>
 			 				<?php if ( get_post_meta($post->ID, '_playne2_buttonicon2', true)) { ?><i class="fa <?php global $post; $buttonicon2 = get_post_meta( $post->ID, '_playne2_buttonicon2', true ); echo "$buttonicon2" ?>"></i> <?php } ?><?php global $post; $buttoncustomtext2 = get_post_meta( $post->ID, '_playne2_buttontextcustom2', true ); echo "$buttoncustomtext2" ?>
 			 			</a>
 					</div>
 			 	<?php } ?>
-
 		
-
-
-					<div class="second-button signup-button">
-			 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl2 = get_post_meta( $post->ID, '_playne2_buttonurlcustom2', true ); echo "$buttoncustomurl2" ?>" ?>
-
-			 				Sign up for free
-			 			</a>
-					</div>
-		
-
-
 			 	<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom2', true) or get_post_meta($post->ID, '_playne2_buttontextcustom', true)) { ?>
 			 	</div>
 			 	<?php } ?>

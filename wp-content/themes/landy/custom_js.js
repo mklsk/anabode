@@ -79,8 +79,8 @@
 
 
         //add quotation marks to the quotes
-        $('.text-blockquote.custom').children('p').append('<span class="quote_mark">&ldquo;</span>');
-        $('.text-blockquote.custom').children('p').prepend('<span class="quote_mark">&rdquo;</span>');
+        $('.text-blockquote.custom').children('.quote').append('<span class="quote_mark">&ldquo;</span>');
+        $('.text-blockquote.custom').children('.quote').prepend('<span class="quote_mark">&rdquo;</span>');
 
         //on section hover
         $('.one_testim').hover(
@@ -91,9 +91,9 @@
                 //dispaly filter
                 $(this).children('.filter').css('opacity', '0.7');
                 //show quote and hide title
-                $(this).children('.text-blockquote.custom').children('p').css('opacity', '1');
+                $(this).children('.text-blockquote.custom').children('.quote').css('opacity', '1');
                 $(this).children('.text-blockquote.custom').children('h6').css('opacity', '0');
-
+                $(this).children('.text-blockquote.custom').children('.excerpt').css('opacity', '0');
 
                 //out callback
             },
@@ -102,8 +102,9 @@
                 //hide filter
                 $(this).children('.filter').css('opacity', '0');
                 //hide quote and show title
-                $(this).children('.text-blockquote.custom').children('p').css('opacity', '0');
+                $(this).children('.text-blockquote.custom').children('.quote').css('opacity', '0');
                 $(this).children('.text-blockquote.custom').children('h6').css('opacity', '1');
+                $(this).children('.text-blockquote.custom').children('.excerpt').css('opacity', '1');
 
             });
 

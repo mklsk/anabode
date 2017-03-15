@@ -17,8 +17,7 @@ mediaCheck({
                 "width": 1280,
                 "height": 720,
                 "path": url_video, 
-                "path2": url_video2,
-                "path3": url_video3,
+                
             });
 
         }

@@ -4,12 +4,75 @@
     padding-bottom: 150px;
 }
 
+#header:before {
+    z-index: 1;
+}
+
+.menu-item a:hover {
+
+    color: #82ca9c;
+}
+
+#header .row {
+    z-index: 2;
+}
+
+#header h2 {
+
+    margin: 0;
+    text-align: left;
+    max-width: 350px;
+}
+
+.page-template-homepage #header .no-showcase  {
+    padding-top: 80px;
+}
+
 .logo-image {
     height: 40px;
 }
 
-.signup-button {
-    display: block;
+.button-area {
+
+    text-align: left;
+}
+
+#header .signup-button .main-button {
+    background-color: #82ca9c;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px;
+}
+
+#header .signup-button .main-button:before {
+
+    background: #fff !important;
+    border-radius: 4px;
+}
+
+#header .signup-button .main-button:hover {
+
+    color: #82ca9c !important;
+}
+
+#header .apple-button .main-button:before, #header .android-button .main-button:before {
+
+    border-radius: 4px;
+}
+
+#header .apple-button .main-button:hover, #header .android-button .main-button:hover {
+
+    color: #fff !important;
+}
+
+#header .apple-button .main-button, #header .android-button .main-button {
+    background-color: #ffffff;
+    border: none !important;
+    border-radius: 4px;
+}
+
+#header .second-button .main-button, #header .first-button .main-button {
+    margin-left: 0;
 }
 
 .main-button {
@@ -22,10 +85,12 @@
 }
 
 .feature_icon {
-    height: 60px;
+    height: 40px;
     display: block;
     margin: 0 auto;
 }
+
+
 
 .more_info {
     height: 0;
@@ -77,6 +142,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .testims_row {
@@ -95,7 +161,7 @@
 }
 
 .filter {
-    background-color: #5C8C6D;
+    background-color: #2d2d35;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -110,7 +176,7 @@
 
 .image-blockquote.custom img {
     border-radius: 0;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
 }
 
 .text-blockquote.custom {
@@ -130,9 +196,16 @@
 }
 
 .text-blockquote.custom > h6 {
-    font-size: 35px;
+    font-size: 25px;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
+}
+
+.excerpt {
+
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.85em;
 }
 
 .text-blockquote.custom .quote {
@@ -140,6 +213,7 @@
     opacity: 0;
     font-size: 25px;
     vertical-align: middle;
+    font-weight: 100;
 }
 
 
@@ -255,8 +329,30 @@ form.get_started {
     display: none;
 }
 
- #new-trusted-contructors .row {
+.footer-bottom {
+
+    filter: brightness(1);
+}
+
+#trusted-contractors .row {
     padding: 100px 0;
+
+}
+
+#trusted-contractors .border-center {
+    margin-bottom: 70px;
+
+}
+
+#trusted-contractors .feature_icon {
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+#trusted-contractors .row .full-image{
+    margin-left: -10%;
+    width: 120%;
 
 }
 

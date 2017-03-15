@@ -40,13 +40,12 @@ Template Name: -- Testimonials slider
     <div class="testims_wrap">
 
         <!-- loop init -->
-        <?php $loop_blockquote = new WP_Query(array('post_type' => 'testimonial', 'posts_per_page' => -1)); $count =0; ?>
-
+        <?php $loop_blockquote = new WP_Query(array('post_type' => 'testimonial', 'posts_per_page' => -1));?>
 
          <div class="testims_row">
             <!-- loop start -->
 
-            <?php if ( $loop_blockquote ) : while ( $count < 2 ) : $loop_blockquote->the_post(); ?>
+            <?php if ( $loop_blockquote ) : while ( $loop_blockquote->have_posts() ) : $loop_blockquote->the_post(); ?>
 
                 <div class="one_testim">
 
@@ -59,45 +58,14 @@ Template Name: -- Testimonials slider
                           <!-- text -->
                   
                         <div class="text-blockquote custom">
-                           <?php the_content(); ?>
+                            <?php the_content(); ?>
                             <h6><?php the_title(); ?></h6>
+                           <?php the_excerpt(); ?>
                         </div>
                 </div>
-
-                <!-- count how many where posted -->
-                <?php $count++; ?>
 
             <?php endwhile; ?>
 
-            </div>
-
-
-            <div class="testims_row">
-            <!-- loop start -->
-
-            <?php while ( $count < 4 ) : $loop_blockquote->the_post(); ?>
-
-                <div class="one_testim">
-
-                <div class="filter"></div>
-                    <!-- img -->
-                        <div class="image-blockquote custom">
-                            <?php the_post_thumbnail( 'large-image' ); ?>
-                        </div>
-
-                    <!-- text -->
-                  
-                        <div class="text-blockquote custom">
-                            <?php the_content(); ?>
-                            <h6><?php the_title(); ?></h6>
-                        </div>
-                </div>
-
-                <!-- count how many where posted -->
-                <?php $count++; ?>
-
-           
-             <?php endwhile; else: ?>
             </div>
 
             <?php endif; ?>

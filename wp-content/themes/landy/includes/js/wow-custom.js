@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 
     var wow = new WOW(
       {
-        offset:       100,
+        offset:       300,
         mobile:       false,      
         live:         true        
       }

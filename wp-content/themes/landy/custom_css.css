@@ -5,7 +5,6 @@
 }
 
 #dynamic {
-
     height: 80px;
     max-height: 80px;
     padding-top: 10px;
@@ -81,13 +80,44 @@
     width: 200px;
 }
 
+#smart-landlords,
+#trusted-contractors {
+    overflow-y: hidden;
+}
+
+.hidden_descrp::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(66,66,73, 0.9);
+    position: absolute;
+    top: -20px;
+    left: 60%;
+}
+
+.hidden_descrp {
+    opacity: 0;
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    margin: 0 auto;
+    background-color: rgba(66,66,73, 0.9);
+    padding: 20px 10px;
+    z-index: 2;
+    border-radius: 5px;
+    position: absolute;
+    transition: opacity 0.7s;
+}
+
 .feature-left .one-half,
 .feature-right .one-half {
     background-position: center;
 }
 
 .feature_icon {
-    height: 40px;
+    height: 50px;
     display: block;
     margin: 0 auto;
 }
@@ -142,7 +172,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .testims_row {
@@ -285,9 +315,13 @@ form.get_started {
 }
 
 .honor {
-    -webkit-appearance: radio;
+    -webkit-appearance: checkbox;
     position: relative;
     right: 5px;
+}
+
+.honor:checked {
+    background-color: yellow;
 }
 
 .radios > label {

@@ -3,77 +3,70 @@
 (function($) {
     $(document).ready(function() {
 
+        $('.testims_row').addClass('wow fadeIn animated data-wow-duration="1.5s"');
+
         /*LEARN MORE SECTION*/
 
-        var all_closed = true;
-
+        $('.learn').data('open', 'false');
         //when learn more is clicked
         $('.learn').click(function(e) {
 
             e.stopPropagation();
-            e.preventDefault();
+            var status = $(this).data('open');
+            var source = $(this).attr('class').split(' ').pop();
 
-            source = $(this).attr('class').split(' ').pop();
+            if (status == 'true') {
 
-
-            $('.learn').parent().parent().css('opacity', '0.5');
-            $(this).parent().parent().css('opacity', '1');
-
-            if (all_closed) {
-
-                //open the placeholder
-                $('.more_info').css('height', '300px');
-
-
-                setTimeout(function() {
-
-                    //display "close" button
-                    $('.close_features').css('opacity', '1');
-
-
-                    //display an appropriate content piece
-                    $('.feature_content.' + source).show(300);
-                    $('.feature_content.' + source).attr('opened', 'true');
-                    $('.close_features').css('display', 'block');
-
-                    all_closed = false;
-
-                }, 700);
+                $('.hidden_descrp.' + source).css('opacity', '0');
+                $(this).data('open', 'false');
 
 
             } else {
 
-
-                $('.feature_content[opened]').hide(300, function() {
-
-                    console.log("was already opened - " + source);
-
-                    //display an appropriate content piece
-                    $('.feature_content.' + source).show(300);
-                    $('.feature_content.' + source).attr('opened', 'true');
-
-                });
+                $('.hidden_descrp.' + source).css('opacity', '1');
+                $(this).data('open', 'true');
             }
 
         });
 
-        //when close button is clicked
-        $('.close_features').click(function() {
 
 
-            //close the placeholder
-            $('.more_info').css('height', '0');
-            //hide "close" button
-            $('.close_features').css('opacity', '0');
-            //hide all content
-            $('.feature_content').hide(300);
-            $('.feature_content.' + source + "[opened='true']").removeAttr('opened');
-            $('.learn').parent().parent().css('opacity', '1');
 
-            all_closed = true;
+        $('.learn').hover(function(e) {
+
+
+            e.stopPropagation();
+            var status = $(this).data('open');
+            var source = $(this).attr('class').split(' ').pop();
+
+            if (status == 'false') {
+
+                $('.hidden_descrp.' + source).css('opacity', '1');
+            }
+
+
+
+        }, function(e) {
+
+
+            e.stopPropagation();
+            var status = $(this).data('open');
+            var source = $(this).attr('class').split(' ').pop();
+
+            if (status == 'false') {
+
+                $('.hidden_descrp.' + source).css('opacity', '0');
+            }
 
         });
 
+
+        $(window).click(function() {
+
+
+            $('.hidden_descrp').css('opacity', '0');
+            $(this).data('open', 'false');
+        });
 
         /*TESTIMONIALS SECTION*/
 
@@ -120,38 +113,33 @@
 
         $('.landlord').click(function() {
 
-            if(!$(this).hasClass('switcher_on')) {
+            if (!$(this).hasClass('switcher_on')) {
 
-            $(this).addClass('switcher_on');
-            $('.tenant').removeClass('switcher_on');
+                $(this).addClass('switcher_on');
+                $('.tenant').removeClass('switcher_on');
 
-            $('.landlord_form').show();
-            $('.tenant_form').hide();
+                $('.landlord_form').show();
+                $('.tenant_form').hide();
 
             }
-        
+
 
         });
 
-         $('.tenant').click(function() {
+        $('.tenant').click(function() {
 
-             if(!$(this).hasClass('switcher_on')) {
+            if (!$(this).hasClass('switcher_on')) {
 
-            $(this).addClass('switcher_on');
-            $('.landlord').removeClass('switcher_on');
+                $(this).addClass('switcher_on');
+                $('.landlord').removeClass('switcher_on');
 
-            $('.landlord_form').hide();
-            $('.tenant_form').show();
+                $('.landlord_form').hide();
+                $('.tenant_form').show();
 
             }
         });
 
     });
-
-
-
-
-
 
 
 

@@ -4,12 +4,22 @@
     padding-bottom: 150px;
 }
 
+#dynamic {
+
+    height: 80px;
+    max-height: 80px;
+    padding-top: 10px;
+}
+
+#dynamic nav {
+    margin: auto;
+}
+
 #header:before {
     z-index: 1;
 }
 
 .menu-item a:hover {
-
     color: #82ca9c;
 }
 
@@ -18,13 +28,12 @@
 }
 
 #header h2 {
-
     margin: 0;
     text-align: left;
     max-width: 350px;
 }
 
-.page-template-homepage #header .no-showcase  {
+.page-template-homepage #header .no-showcase {
     padding-top: 80px;
 }
 
@@ -33,45 +42,38 @@
 }
 
 .button-area {
-
     text-align: left;
 }
 
-#header .signup-button .main-button {
+.signup-button .main-button {
     background-color: #82ca9c;
     color: #fff !important;
     border: none !important;
     border-radius: 4px;
 }
 
-#header .signup-button .main-button:before {
-
+.signup-button .main-button:before {
     background: #fff !important;
     border-radius: 4px;
 }
 
-#header .signup-button .main-button:hover {
-
+.signup-button .main-button:hover {
     color: #82ca9c !important;
 }
 
-#header .apple-button .main-button:before, #header .android-button .main-button:before {
-
-    border-radius: 4px;
-}
-
-#header .apple-button .main-button:hover, #header .android-button .main-button:hover {
-
+.apple-button .main-button:hover,
+.android-button .main-button:hover {
     color: #fff !important;
 }
 
-#header .apple-button .main-button, #header .android-button .main-button {
-    background-color: #ffffff;
-    border: none !important;
+.apple-button .main-button,
+.android-button .main-button {
+    background: none;
     border-radius: 4px;
 }
 
-#header .second-button .main-button, #header .first-button .main-button {
+.second-button .main-button,
+.first-button .main-button {
     margin-left: 0;
 }
 
@@ -89,8 +91,6 @@
     display: block;
     margin: 0 auto;
 }
-
-
 
 .more_info {
     height: 0;
@@ -202,7 +202,6 @@
 }
 
 .excerpt {
-
     position: absolute;
     bottom: 20px;
     font-size: 0.85em;
@@ -216,20 +215,15 @@
     font-weight: 100;
 }
 
-
-
 .form_wrap {
-
-    background-color: #F8F8F8; 
-    margin: 0 20%;
+    background-color: #F8F8F8;
+    margin: 50px 20% 0;
     padding-top: 20px;
     border-radius: 10px;
     overflow: hidden;
-
 }
 
 .switcher {
-
     width: 300px;
     height: 40px;
     margin: 0 auto 30px auto;
@@ -239,59 +233,54 @@
     overflow: hidden;
     border-radius: 5px;
     border: solid 1.5px #84c99d;
-
+    display: none;
 }
 
 .switcher_sect {
-
     background-color: #fff;
     width: 50%;
     text-align: center;
     line-height: 40px;
     height: 100%;
     cursor: pointer;
-
 }
 
 .switcher_on {
-
     background-color: #84c99d;
     color: #fff;
     cursor: initial;
 }
 
+#get-started-for-free .border-block {
+    margin-bottom: 0;
+}
+
 form.get_started {
-    
-    padding: 10px 10px;
+    padding: 10px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .get_started > fieldset {
-    text-align:center;
+    text-align: center;
 }
 
 .get_started > * {
     width: 100%;
 }
 
-
 .radios {
-
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+    display: none;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .radio_wrap {
-
     display: inline-block;
 }
 
 .radio_wrap:first-child {
-
     margin-left: 40px;
 }
 
@@ -303,7 +292,6 @@ form.get_started {
 
 .radios > label {
     width: 10%;
-
 }
 
 .radios > br {
@@ -311,12 +299,10 @@ form.get_started {
 }
 
 .texts {
-
     margin-top: 30px;
 }
 
 .texts > input {
-
     width: 100%;
     margin-bottom: 30px;
     height: 50px;
@@ -324,36 +310,38 @@ form.get_started {
     border-radius: 5px;
 }
 
-#footer > .row {
+#get-started-for-free .signup-button {
+    text-align: center;
+}
 
+#get-started-for-free .signup-button .main-button {
+    margin-left: 15px;
+    font-size: 15px;
+    padding: 17px 32px;
+}
+
+#footer > .row {
     display: none;
 }
 
 .footer-bottom {
-
     filter: brightness(1);
 }
 
 #trusted-contractors .row {
     padding: 100px 0;
-
 }
 
 #trusted-contractors .border-center {
     margin-bottom: 70px;
-
 }
 
 #trusted-contractors .feature_icon {
     height: 30px;
     margin-bottom: 10px;
-
 }
 
-#trusted-contractors .row .full-image{
+#trusted-contractors .row .full-image {
     margin-left: -10%;
     width: 120%;
-
 }
-
-

@@ -185,11 +185,34 @@
 
 			<div class="main-menu-footer clearfix">
 
-				<div class="copyright">&copy; <a href="<?php echo esc_url(home_url( '/' )); ?>"><?php echo esc_html(get_bloginfo('name')); ?></a> <span><?php $the_year = date("Y"); echo esc_js($the_year); ?></span></div>
+				<div class="columns">
+					<div class="footer_column">
+						<h3>Community</h3>
+						<a href="">Tutorial</a>
+						<a href="">Tips</a>
+					</div>
+					<div class="footer_column">
+						<h3>Info</h3>
+						<a href="">Contact</a>
+						<a href="">About</a>
+						<a href="">Support</a>
+					</div>
+					<div class="footer_column">
+						<h3>Social</h3>
+						<div class="footer_icons">
+						<div>
+							<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>	
+						</div>
+						<div>
+							<a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>	
+						</div>
+						</div>
+					</div>
+				</div>
 
-				<div class="menu-footer">
-					<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_class' => 'nav', 'fallback_cb' => false)); ?>
-				</div>	
+				<div class="copyright">Copyright &copy;  <span><?php $the_year = date("Y"); echo esc_js($the_year); ?></span> Anabode</div>
 
 			</div>
 					

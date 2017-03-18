@@ -7,7 +7,7 @@
 #dynamic {
     height: 80px;
     max-height: 80px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 #dynamic nav {
@@ -37,7 +37,7 @@
 }
 
 .logo-image {
-    height: 40px;
+    height: 30px;
 }
 
 .button-area {
@@ -85,13 +85,42 @@
     overflow-y: hidden;
 }
 
+/*.hidden_descrp::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid rgba(66,66,73, 0.9);
+    position: absolute;
+    top: 145px;
+    right: 255px;
+}
+
+.hidden_descrp {
+    opacity: 0;
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    margin: 0 auto;
+    background-color: rgba(66,66,73, 0.9);
+    padding: 20px 10px;
+    z-index: 2;
+    border-radius: 5px;
+    position: absolute;
+    left: 245px;
+    bottom: -10px;
+    transition: opacity 0.7s;
+}*/
+
+
 .hidden_descrp::before {
     content: '';
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid rgba(66,66,73, 0.9);
+    border-bottom: 20px solid rgba(66, 66, 73, 0.9);
     position: absolute;
     top: -20px;
     left: 60%;
@@ -103,7 +132,7 @@
     width: 80%;
     color: #fff;
     margin: 0 auto;
-    background-color: rgba(66,66,73, 0.9);
+    background-color: rgba(66, 66, 73, 0.9);
     padding: 20px 10px;
     z-index: 2;
     border-radius: 5px;
@@ -270,34 +299,6 @@
     overflow: hidden;
 }
 
-.switcher {
-    width: 300px;
-    height: 40px;
-    margin: 0 auto 30px auto;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    border-radius: 5px;
-    border: solid 1.5px #84c99d;
-    display: none;
-}
-
-.switcher_sect {
-    background-color: #fff;
-    width: 50%;
-    text-align: center;
-    line-height: 40px;
-    height: 100%;
-    cursor: pointer;
-}
-
-.switcher_on {
-    background-color: #84c99d;
-    color: #fff;
-    cursor: initial;
-}
-
 #get-started-for-free .border-block {
     margin-bottom: 0;
 }
@@ -317,36 +318,23 @@ form.get_started {
     width: 100%;
 }
 
-.radios {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.radio_wrap {
-    display: inline-block;
-}
-
-.radio_wrap:first-child {
-    margin-left: 40px;
-}
-
 .honor {
     -webkit-appearance: checkbox;
     position: relative;
     right: 5px;
 }
 
-.honor:checked {
-    background-color: yellow;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(77,81,92, 0.6);   
 }
-
-.radios > label {
-    width: 10%;
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(77,81,92, 0.6);   
 }
-
-.radios > br {
-    display: none;
+:-ms-input-placeholder { /* IE 10+ */
+color: rgba(77,81,92, 0.6);   
+}
+:-moz-placeholder { /* Firefox 18- */
+color: rgba(77,81,92, 0.6);   
 }
 
 .texts {
@@ -359,6 +347,11 @@ form.get_started {
     height: 50px;
     font-size: 15px;
     border-radius: 5px;
+}
+
+label[for="agree"] {
+
+    font-size: 13px;
 }
 
 #get-started-for-free .signup-button {
@@ -380,63 +373,69 @@ form.get_started {
 }
 
 .main-menu-footer .columns {
-
     display: flex;
     justify-content: space-between;
+    padding: 0 100px;
     flex-direction: row;
 }
 
 #footer .columns {
-
     margin: 0;
+    padding-bottom: 10px;
 }
 
 .columns .footer_column {
+    text-align: center;
+}
 
-    text-align: left;
-    flex-grow: 1;
-    height: 50px;
+.footer_column.middle {
+
+    margin-right: 35px;
 }
 
 .columns .footer_column h3 {
-
     font-size: 15px;
     color: #C0C0C1;
-    font-family: 'Raleway','Open Sans',Helvetica,Arial,sans-serif;
-    margin-bottom: 5px;
+    font-family: 'Raleway', 'Open Sans', Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
 }
 
 .columns .footer_column a {
-
     display: block;
     color: #8A8A8B;
 }
 
-
-
-.main-menu-footer .copyright {
-
+.main-menu-footer .copyrights {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
     color: #8A8A8B;
-    line-height: initial;
     position: relative;
     top: 25px;
 }
 
 #content-wrapper #footer .footer-bottom .row {
-    padding-bottom: 25px;
+    padding: 25px 0;
 }
 
 .footer_icons {
-
     font-size: 20px;
     line-height: 20px;
     color: #6D6D6E;
 }
 
 .footer_icons a {
-
     display: inline-block !important;
 }
 
+@media screen and (max-width: 1400px) {
+    #smart-landlords img {
+        max-width: 750px;
+    }
+}
 
-
+@media screen and (max-width: 1370px) {
+    #header {
+        max-height: 530px;
+    }
+}

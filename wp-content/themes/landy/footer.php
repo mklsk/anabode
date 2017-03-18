@@ -187,32 +187,31 @@
 
 				<div class="columns">
 					<div class="footer_column">
-						<h3>Community</h3>
-						<a href="">Tutorial</a>
-						<a href="">Tips</a>
-					</div>
-					<div class="footer_column">
-						<h3>Info</h3>
-						<a href="">Contact</a>
-						<a href="">About</a>
+						<h3>Find out more</h3>
+						<a href="">Contacts</a>
+						<a href="">Bespoke Solutions</a>
 						<a href="">Support</a>
+					</div>
+					<div class="footer_column middle">
+						<h3>Community</h3>
+						<a href="">Tutorials</a>
+						<a href="">Tips</a>
 					</div>
 					<div class="footer_column">
 						<h3>Social</h3>
 						<div class="footer_icons">
-						<div>
+					
 							<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 							<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>	
-						</div>
-						<div>
+						
 							<a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 							<a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>	
-						</div>
+				
 						</div>
 					</div>
 				</div>
 
-				<div class="copyright">Copyright &copy;  <span><?php $the_year = date("Y"); echo esc_js($the_year); ?></span> Anabode</div>
+				<div class="copyrights">Copyright &copy;  <span><?php $the_year = date("Y"); echo esc_js($the_year); ?></span> Anabode</div>
 
 			</div>
 					

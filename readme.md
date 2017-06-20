@@ -1,3 +1,3 @@
-#Anabode website
+# Anabode website
 
-Developing initial structure for Anabode app website
+Website introducing Anabode app 

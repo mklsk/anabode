@@ -188,12 +188,13 @@
 				<div class="columns">
 					<div class="footer_column">
 						<h3>Find out more</h3>
-						<a href="">Contacts</a>
+						<a href="">Contact Us</a>
 						<a href="">Bespoke Solutions</a>
-						<a href="">Support</a>
+						<a href="">Commercial & Enterprise</a>
 					</div>
 					<div class="footer_column middle">
 						<h3>Community</h3>
+						<a href="">Support</a>
 						<a href="">Tutorials</a>
 						<a href="">Tips</a>
 					</div>
@@ -201,11 +202,10 @@
 						<h3>Social</h3>
 						<div class="footer_icons">
 					
-							<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-							<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>	
-						
-							<a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-							<a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>	
+							<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>	
+							<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>	
 				
 						</div>
 					</div>

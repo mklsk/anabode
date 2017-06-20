@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
 /*-----------------------------------------------------------------------------------*/
 
 mediaCheck({
-        media: '(max-width: 768px)',
+        //media: '(max-width: 768px)',
         entry: function () {
         },
         exit: function () {

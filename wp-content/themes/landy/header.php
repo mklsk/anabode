@@ -24,7 +24,9 @@
 
 	<?php if( get_theme_mod( 'theme_customizer_general4' ) == '1' or get_theme_mod( 'theme_customizer_general9' ) == '1') { ?><?php } else { // Sticky Navigation ?>
 	<div class="header" id="dynamic">
-		
+		<div class="collapse-menu-inner dynamic-burger">
+			<i class="fa fa-bars"></i>
+		</div>
 		<nav class="row clearfix">
 			<div class="logo">
 			<?php if ( get_theme_mod('theme_customizer_logo') ) { ?>
@@ -42,6 +44,10 @@
 						<?php wp_nav_menu(array('theme_location' => 'inner', 'menu_class' => 'nav', 'fallback_cb' => false)); ?>
 					<?php } ?>
 			 	</div>
+			</div>
+			
+			<div class="dynamic-get_started">
+				<a href="#anchor_target">Get started for free</a>
 			</div>
 		</nav>	
 	</div> 
@@ -61,6 +67,10 @@
 						<?php wp_nav_menu(array('theme_location' => 'inner', 'menu_class' => 'nav-mobile', 'fallback_cb' => false)); ?>
 					<?php } ?>
 				</div>
+			</div>
+			<div class="burger-icons"></div>
+			<div class="burger-cross">
+				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 		</div>
 	</div>	
@@ -82,7 +92,7 @@
 
 			<div class="logo animated fadeIn"<?php if( get_theme_mod( 'theme_customizer_general2' ) == '1' ) { ?> id="logo-centered"<?php } ?>>
 					 <?php if ( get_theme_mod('theme_customizer_logo') ) { ?>
-						<a href="<?php echo esc_url(home_url( '/' )); ?>" class="clearfix"><img class="logo-image" src="<?php echo esc_url('' .get_theme_mod( 'theme_customizer_logo', '' )."");?>" alt="<?php the_title(); ?>" /></a>
+						<a href="<?php echo esc_url(home_url( '/' )); ?>" class="clearfix"><img class="logo-image central" src="<?php echo esc_url('' .get_theme_mod( 'theme_customizer_logo', '' )."");?>" alt="<?php the_title(); ?>" /></a>
 		    		<?php } else { ?>
 			    		<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php bloginfo('name'); ?>"><?php echo esc_html(get_bloginfo('name')); ?></a>
 		    		<?php } ?>
@@ -282,7 +292,7 @@
 				</div>
 
 				<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom', true)) { ?>
-					<div class="first-button apple-button">
+					<div class="first-button desktop-button apple-button">
 			 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl = get_post_meta( $post->ID, '_playne2_buttonurlcustom', true ); echo "$buttoncustomurl" ?>" ?>
 			 				<?php if ( get_post_meta($post->ID, '_playne2_buttonicon', true)) { ?><i class="fa <?php global $post; $buttonicon = get_post_meta( $post->ID, '_playne2_buttonicon', true ); echo "$buttonicon" ?>"></i> <?php } ?><?php global $post; $buttoncustomtext = get_post_meta( $post->ID, '_playne2_buttontextcustom', true ); echo "$buttoncustomtext" ?>
 			 			</a>
@@ -290,12 +300,24 @@
 			 	<?php } ?>
 
 				<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom2', true)) { ?>
-					<div class="second-button android-button">
+					<div class="second-button desktop-button android-button">
 			 			<a class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" href="<?php global $post; $buttoncustomurl2 = get_post_meta( $post->ID, '_playne2_buttonurlcustom2', true ); echo "$buttoncustomurl2" ?>" ?>
 			 				<?php if ( get_post_meta($post->ID, '_playne2_buttonicon2', true)) { ?><i class="fa <?php global $post; $buttonicon2 = get_post_meta( $post->ID, '_playne2_buttonicon2', true ); echo "$buttonicon2" ?>"></i> <?php } ?><?php global $post; $buttoncustomtext2 = get_post_meta( $post->ID, '_playne2_buttontextcustom2', true ); echo "$buttoncustomtext2" ?>
 			 			</a>
 					</div>
 			 	<?php } ?>
+
+
+			 	<div class="first-button apple-button download">
+			 			<a id="download_link" class="main-button <?php if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value1") { ?>hvr-sweep-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value2") { ?>hvr-sweep-to-right<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value3") { ?>hvr-sweep-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value4") { ?>hvr-fade<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value5") { ?>hvr-bounce-to-bottom<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value6") { ?>hvr-bounce-to-top<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value7") { ?>hvr-bounce-to-left<?php } else if ( get_theme_mod('theme_customizer_headerbuttoneffect') == "value8") { ?>hvr-bounce-to-right<?php } else { ?>hvr-sweep-to-top<?php } ?>" ?>
+			 				
+			 				Download now
+			 			</a>
+					</div>
+
+
+
+
 		
 			 	<?php if ( get_post_meta($post->ID, '_playne2_buttontextcustom2', true) or get_post_meta($post->ID, '_playne2_buttontextcustom', true)) { ?>
 			 	</div>

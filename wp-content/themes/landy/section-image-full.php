@@ -26,6 +26,7 @@ Template Name: -- Image full width
 		    	<!-- Featured image -->
 		        <?php the_post_thumbnail( 'large-image' ); ?>
 		    <?php } ?>
+		    <img width="3200" id="stay" height="1100" src="http://anabode.net/develop/wp-content/uploads/2017/03/contractors-final.jpg" class="stay attachment-large-image size-large-image wp-post-image" alt="" srcset="http://anabode.net/develop/wp-content/uploads/2017/03/contractors-final.jpg 3200w, http://anabode.net/develop/wp-content/uploads/2017/05/contractors-final-MOBILe.jpg 768w, http://anabode.net/develop/wp-content/uploads/2017/03/contractors-final-1024x352.jpg 1024w, http://anabode.net/develop/wp-content/uploads/2017/03/contractors-final-1500x516.jpg 1500w, http://anabode.net/develop/wp-content/uploads/2017/03/contractors-final-1400x481.jpg 1400w" sizes="(max-width: 3200px) 100vw, 3200px">
 		</div>
 
 	</div>

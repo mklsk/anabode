@@ -1,0 +1,15 @@
+Has /Library/Tcl/teapot = 0
+HOME______ = /Users/germanmikulski
+USER______ = root
+pkgdir____ = /usr/local/Caskroom/tcl/8.6.4.1.299124/ActiveTcl-8.6.pkg
+installdir = /
+repository = /Library/Tcl/teapot
+shell_____ = /usr/local/bin/tclsh8.6
+Having a seed repository.
+No existing repository, copying the seed to the repository-to-be at /Library/Tcl/teapot
+/usr/local/bin/teacup link make /Library/Tcl/teapot /usr/local/bin/tclsh8.6
+Ok
+/usr/local/bin/teacup default /Library/Tcl/teapot
+/Library/Tcl/teapot
+Forcing ownership of /Users/germanmikulski/Library/Application Support/ActiveState to root
+___done

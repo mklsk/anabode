@@ -243,6 +243,7 @@ function custom_scripts() {
 
         wp_enqueue_style( 'custom_css', get_template_directory_uri() . "/custom_css.css", array(), '', 'screen' );
         wp_enqueue_script('custom_js', get_template_directory_uri() . '/custom_js.js', array( 'jquery' ), true );
+        wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js', array( 'jquery' ), true );
 }
 
 

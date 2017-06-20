@@ -37,7 +37,7 @@ Template Name: -- Testimonials slider
     <?php } ?>
 
 
-    <div class="testims_wrap">
+    <div class="testims_wrap wow fadeInUp animated" data-wow-duration="1.5s" data-wow-offset="-100">
 
         <!-- loop init -->
         <?php $loop_blockquote = new WP_Query(array('post_type' => 'testimonial', 'posts_per_page' => -1));?>
@@ -46,22 +46,24 @@ Template Name: -- Testimonials slider
             <!-- loop start -->
 
             <?php if ( $loop_blockquote ) : while ( $loop_blockquote->have_posts() ) : $loop_blockquote->the_post(); ?>
+	
+                <div class="one_testim-outer_container">
+					<div class="one_testim">
 
-                <div class="one_testim">
+							<div class="filter"></div>
+							<!-- img -->
+							<div class="image-blockquote custom">
+								<?php the_post_thumbnail( 'large-image' ); ?>
+							</div>
 
-                        <div class="filter"></div>
-                        <!-- img -->
-                        <div class="image-blockquote custom">
-                            <?php the_post_thumbnail( 'large-image' ); ?>
-                        </div>
+							  <!-- text -->
 
-                          <!-- text -->
-                  
-                        <div class="text-blockquote custom">
-                            <?php the_content(); ?>
-                            <h6><?php the_title(); ?></h6>
-                           <?php the_excerpt(); ?>
-                        </div>
+							<div class="text-blockquote custom">
+								<?php the_content(); ?>
+								<h6><?php the_title(); ?></h6>
+							   <?php the_excerpt(); ?>
+							</div>
+					</div>
                 </div>
 
             <?php endwhile; ?>
